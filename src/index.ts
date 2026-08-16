@@ -9,6 +9,7 @@ import {
   type Interaction,
 } from "discord.js";
 import { ticketCommand } from "./commands/ticket.js";
+import { embedCommand } from "./commands/embed.js";
 import { handleButton } from "./handlers/button.js";
 import { handleSelectMenu } from "./handlers/selectMenu.js";
 
@@ -27,7 +28,7 @@ if (!token || !clientId) {
 const botToken = token;
 const applicationId = clientId;
 
-const commands: BotCommand[] = [ticketCommand];
+const commands: BotCommand[] = [ticketCommand, embedCommand];
 const commandMap = new Collection<string, BotCommand>(commands.map((command) => [
   String((command.data.toJSON() as { name: string }).name),
   command,
