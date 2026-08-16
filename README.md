@@ -16,3 +16,6 @@ Ticket buttons allow users to cancel, staff members to close, and authorized sta
 ## Running the bot
 
 Copy `.env.example` to `.env`, fill in the bot variables, and run `pnpm install`, followed by `pnpm run build` and `pnpm start`.
+
+
+<!-- Railway deployment trigger -->
